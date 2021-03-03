@@ -6,7 +6,7 @@ from openwisp_notifications.types import NOTIFICATION_CHOICES
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('openwisp_notifications', '0002_default_permissions'),
+        ('openwisp_notifications', '0001_initial'),
     ]
 
     operations = [

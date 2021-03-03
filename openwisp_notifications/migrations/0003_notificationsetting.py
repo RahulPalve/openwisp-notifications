@@ -76,7 +76,7 @@ class Migration(migrations.Migration):
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
         swapper.dependency('openwisp_users', 'Organization'),
-        ('openwisp_notifications', '0003_notification_notification_type'),
+        ('openwisp_notifications', '0002_notification_notification_type'),
     ]
 
     operations = [

@@ -23,7 +23,7 @@ def populate_notification_user_permissions(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('openwisp_notifications', '0004_notificationsetting'),
+        ('openwisp_notifications', '0003_notificationsetting'),
     ]
 
     operations = [
