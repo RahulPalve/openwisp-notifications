@@ -11,12 +11,6 @@ from django.db import migrations, models
 from openwisp_notifications.types import NOTIFICATION_CHOICES
 
 
-def get_swapped_model(apps, app_name, model_name):
-    model_path = swapper.get_model_name(app_name, model_name)
-    app, model = swapper.split(model_path)
-    return apps.get_model(app, model)
-
-
 def create_notification_setting_groups_permissions(apps, schema_editor):
     # Populate permissions
     app_config = apps.get_app_config('openwisp_notifications')
